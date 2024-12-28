@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommender System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #4B0082;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #6A0DAD;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 2s;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #8A2BE2;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 10px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        li:hover {
+            transform: scale(1.05);
+            background-color: #7B68EE;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Recommended movies similar to 'The Dark Knight':</h1>
+        <ul>
+            <li>The Godfather</li>
+            <li>The Shawshank Redemption</li>
+            <li>Inception</li>
+            <li>Fight Club</li>
+            <li>Pulp Fiction</li>
+            <li>The Lord of the Rings: The Return of the King</li>
+            <li>The Matrix</li>
+            <li>Goodfellas</li>
+            <li>Seven Samurai</li>
+            <li>Star Wars: Episode V - The Empire Strikes Back</li>
+        </ul>
+    </div>
+</body>
+</html>
